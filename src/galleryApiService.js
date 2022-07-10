@@ -35,7 +35,7 @@ export default class GalleryApiService {
             
             this.totalHits = data.totalHits;
             this.pageTotal = Math.ceil(this.totalHits / PER_PAGE);
-            console.log("how many pages", this.pageTotal);
+            // console.log("how many pages", this.pageTotal);
 
             if (data.total === 0) {
                 throw new Error('Sorry, there are no images matching your search query. Please try again.');
